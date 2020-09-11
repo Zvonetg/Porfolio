@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+body > *{
+    padding-left:6%;
+    padding-right:6%;
+    /* width: 88%; */
+}
+header{
+    width: 100%;
+    position: fixed;
+    display:flex;
+    height: fit-content;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    display: flex;
+    height: 7em;
+    width: 7em;
+    margin-top: 2%;
+}
+nav ul > li p a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+header nav{
+    margin-top: -4%;
+    width: 55%;
+}
+
+nav ul{
+    display: flex;
+    float: right;
+}
+nav ul > li{
+    list-style: none;
+    background-color:transparent;
+    border-radius:10px;
+    margin-left: 1%;
+}
+
+nav ul > li:hover,nav ul > li p a:hover{
+    color:black ;
+    background-color: white;
+}
+
+nav ul > li p{
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    margin-top: 0.2em;
+    margin-bottom: 0.1em;
+    font-size: 110%;
+    font-variant: small-caps;
+
+}
+.wrapper{
+    position: relative;
+    z-index: -1;
+    /* margin-top: -100vh; */
+    height: 100vh;
+    background-image: url("../img/stariMost.jpg");
+    background-size: cover;
+    /* background-position:  center; */
+}
+#cover{
+    z-index: 1;
+    display: flex;
+    color: whitesmoke;
+    font-size: 3em;
+    width: 100%;
+    height: 55vh;
+    margin-top: -55vh;
+    flex-direction: column;
+    font-weight: lighter;
+    
+}
+#name{
+    font-size: 24px;
+    height: fit-content;
+    margin-top: 20%;
+    margin-left: 2%;
+}
+#gss{
+    font-size: 20px;
+}
+.desc{
+    float: left;
+}
+
+#cover div{
+    display: block;
+    float: right;
+    height: fit-content;
+}
+#cover  div > *{
+    padding-left: 52%;
+}
+.wrapper::after{
+    content: '';
+    background-image: linear-gradient(-45deg, #348C77 0%, #5A98A6 44%, #296086 100%, #6D91AE 100%, #C86DD7 100%);
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+.wrapper .birds{
+    padding-top: 15%;
+    padding-left: 45%;
+}
+.birds img{
+    margin-right: 26%;
+    /* background-color:grey;     */
+}
+.birds img:nth-child(2){
+    margin-bottom: 25%;
+}
+.rec img{
+    z-index: 1;
+    width: 140%;
+}
+.about{
+height: 100vh;
+background-image: url("../img/vaves.png");
+background-repeat: no-repeat;
+background-position: bottom;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+h1{
+    color: #5A98A6 ;
+    font-weight: 200;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    margin-left: 40%;
+    margin-top: 1.5%;
+}
+h1:nth-of-type(2){
+    color: white;
+}
+#c{
+    margin-top: 6%;
+    color: white;
+}
+.about img{
+    width: 270px;
+    height: 200px;
+    margin-top: 18%;
+    display: inline-block;
+    transform:rotate(90deg);
+    border-radius: 100px;
+}
+.about span{
+    display: inline-block;
+    width: 400px;
+    margin-top: 20%;
+    color: grey;
+
+}
+.parallax{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+
+}
+.parallax img{
+    margin-top: 5%;
+    width:50px;
+    height:50px;
+}
+.parallax img:nth-child(3n+0){
+    margin-top: 50%;
+
+}
+.parallax img:nth-child(4n+1){
+    margin-top: 35%;
+}
+.parallax img:nth-child(5n+2){
+    margin-top: 20%;
+}
+.services{
+    height: 110vh;
+    opacity: 0.95;
+    background-image: linear-gradient(-180deg, #2A5D80 0%, #825FBB 81%, #AD5FD8 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.services img{
+    margin-top: 9%;
+    height: fit-content;
+}
+.services div{
+    height: 70vh;
+    width: 25%;
+    background-color: white;
+    margin-top: 10%;
+    border-radius: 25px;
+    opacity: 0.5;
+}
+.projects{
+    height: 100vh;
+    width: 100%;
+    padding-top: 15%;
+    
+}
+.projects * div {
+    height: 300px;
+    width: 200px;
+    border-radius:25px;
+}
+#p1{
+    background-image: url("../img/Social.jpg");
+    background-size:200px 300px;
+    background-repeat: no-repeat;
+}
+#p2{
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    
+}
+#p21{
+    background-image: url("../img/RealEstateWebTemplateFirstPage.jpg");
+    background-size:300px 150px;
+    margin:0;
+    background-repeat: no-repeat;
+    
+    border-radius:0;
+
+}
+#p22{
+    background-image: url("../img/RealEstateWebTemplateSecond&ThirdPage.jpg");
+    background-size:300px 150px;
+    margin: 0;
+    border-radius:0;
+    background-repeat: no-repeat;
+    
+
+}
+#p3{
+    background-image: url("../img/myLogo.png");
+    background-size:200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+#p4{
+    background-image: url("../img/RealEstatePoster.jpg");
+    background-size:200px 300px;
+    background-repeat: no-repeat;
+    
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/contact.jpg");
+    background-size: cover;
+    background-position: center ;
+    -webkit-clip-path: polygon(0 9%, 100% 0, 100% 100.1%, 0% 100.1%);
+    /* -webkit-filter: grayscale(1); */
+    /* filter: blur(7px);     */
+    /* filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a' x='0' y='0' width='1' height='1'%3E%3CfeGaussianBlur stdDeviation='4' result='b'/%3E%3CfeMorphology operator='dilate' radius='4'/%3E %3CfeMerge%3E%3CfeMergeNode/%3E%3CfeMergeNode in='b'/%3E%3C/feMerge%3E%3C/filter%3E%3C/svg%3E#a"); */
+}
+.contact img{
+    width: 600px;
+    height: 400px;
+}
+form{
+    display:flex;
+    margin: auto auto;
+    width :50%;
+    height: 50vh;
+    /* flex-direction: column; */
+    flex-wrap: wrap; 
+    align-content: space-between; 
+    margin-top: 20%;
+}
+.inputs{
+    opacity: 0.5;
+    width: 50%;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px transparent;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+#mail,#predmet{
+    height: 15%;
+    width: 45%;
+}
+#predmet{
+    margin-left: 10%;
+    
+}
+
+#sadrzaj{
+    width: 100%;
+    height:60%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+#submit{
+    width: 25%;
+    height: 10%;
+    align-self: flex-end;
+    margin:0 auto;
+    
+}
+
+
+
+.blur{
+    position: absolute;
+    margin-left: -7%;;
+    margin-top: 0.5%;
+    width: 101%;
+    height: 100%;
+    filter: blur(7px);
+    background-image: url("../img/contact.jpg");
+    background-size: cover;
+
+}
+footer{
+    background-image: linear-gradient(-179deg, #4C3120 0%, #4A4A4A 100%);
+    height: 25vh;
+    color: whitesmoke;
+    font-weight: 200;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer span,footer p{
+    padding-top: 3%;
+    font-size: 80%;
+
+}
+footer span{
+    font-size: 230%;
+}
+footer p{
+    width: fit-content;
+    margin:auto auto;
+    color: grey;
+}
+footer img{
+    height: 5em;
+    width: 5em;
+    margin-bottom: -7%;
+
+}
+footer div{
+    width: fit-content;
+    margin:auto auto;
+}
+.menu{
+    display: none;
+}
+@media only screen and (max-width:950px){
+    .services{
+        height: 350vh;
+    }
+    
+    .projects{
+        justify-content: space-evenly;
+        height: 120vh;
+    } 
+    footer{
+        height: 35vh;
+    }
+    footer p{
+        height: 20%;
+        margin-left: 30%;
+    }
+    .about{
+        height:200vh;
+    }
+    #p3{
+        background-size:100px 100px;
+        margin-left: 4%;        
+    }
+    
+}
+@media only screen and (max-width:550px){
+    #cover  div > *{
+        padding-left: 2%;
+    }
+    header nav ul{
+        display:none;
+        padding-top: 3%;
+    }
+    .desc{
+        margin-top: -10%;
+    }
+    #gss{
+        margin-top: -2%;
+    }
+    #name{
+        margin-top:35%;
+    }
+    .wrapper{
+        background-position:center;
+    }
+    #logo{
+        width: 3em;
+        height: 3em;
+        margin-left: 40%;
+    }
+    /* .menu{
+        padding-top: 5%;
+        display: inline-block;
+        float: right;
+    } */
+    .parallax img{
+        width:30px;
+        height:30px;
+    }
+    .parallax img:nth-child(3n+0){
+        margin-top: 50vh;
+    
+    }
+    .parallax img:nth-child(4n+1){
+        margin-top: 155vh;
+    }
+    .parallax img:nth-child(5n+2){
+        margin-top: 250vh;
+    }
+    .about{
+        background-position: 25% 100%;
+    }
+    .services{
+        height: 330vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+
+
+    }
+    .projects{
+        justify-content: space-evenly;
+        height: 90vh;
+    }
+    .about{
+        height:100vh;
+    }
+    .about span{
+        margin-top: -10%;
+        font-size: 14px;
+    }
+    form{
+        margin-top: 60%;
+        width: 80%;
+    }
+    .contact img{
+        width: 90%;
+        height: 50%;
+    }
+    footer{
+        font-size: 70%;
+    }
+    footer{
+        height: 20vh;
+    }
+    footer p{
+        margin-left: 25%;
+    }
+    h1{
+        margin-left: 32%;
+        padding-top: 4%;
+        font-size: 26px;
+    }
+    h1:nth-of-type(2),h1:nth-of-type(3){
+        margin-top: -10%;
+    }
+ .rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}   
+}
+
+
